@@ -8,7 +8,8 @@ const isValid = (email) => {
   return regEx.test(String(email).toLocaleLowerCase());
 };
 
-btn.addEventListener("click", () => {
+btn.addEventListener("click", (e) => {
+  e.preventDefault();
   const emailValue = emailInput.value.trim();
   if (emailValue === "" || !isValid(emailValue)) {
     err.innerHTML = "Error! Please check your email";
