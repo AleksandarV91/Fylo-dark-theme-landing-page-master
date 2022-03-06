@@ -82,6 +82,7 @@ header {
 .nav-links {
   display: flex;
   column-gap: 0.71rem;
+  font-family: var(--raleway);
 }
 
 .intro-image img {
